@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard-POS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="asserts/css/bootstrap.css">
+    <link rel="stylesheet" href="styleCss.css">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="asserts/fonts/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav id="nav1" class="navbar  bg-dark">
+            <nav id="nav2" class="navbar  w-75">
+                <div id="contentLink" >
+                    <a id="homeLink" class="linkmain" href="#">Home</a>
+                    <a id="customerLink" class="linkmain" href="#">Customers</a>
+                    <a id="itemLink" class="linkmain" href="#">Items</a>
+                    <a id="orderLink" class="linkmain" href="#">Order</a>
+                </div>
+
+            <div>
+            <!--<a href="#">--><img src="asserts/image/pos.png"><!--</a>-->
+            <h3 id="pos"><b>Dilki POS System</b></h3>
+
+            </div>
+
+
+
+            <div >
+            <a id="itemManageLink" class="linksub" href="#">Item Manage</a>
+            <a class="linksub" href="#">Login</a>
+            <a class="linksub" href="#">Logout</a>
+            </div>
+
+
+
+        </nav>
+    </nav>
+
+    <input id="input" type="text">
+
+    <hr id="rule">
+
+    <!--Home Content.....................................-->
+    <main id="contentHome" class="bg-light">
+
+        <div id="main" class="p-2 bd-highlight ">
+            <section class="row">
+                <div class="col">
+                    <div class="card text-white bg-primary o-hidden h-100">
+                        <div class="card-header">
+                            <h1>Customers</h1>
+                        </div>
+                        <div class="card-text">
+                            <h1 class="text-center display-3"><strong>100</strong></h1>
+                        </div>
+                        <a class="card-footer text-white clearfix small z-1" href="customer.html">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-warning o-hidden h-100">
+                        <div class="card-header">
+                            <h1>Items</h1>
+                        </div>
+                        <div class="card-text">
+                            <h1 class="text-center display-3"><strong>200</strong></h1>
+                        </div>
+                        <a class="card-footer text-white clearfix small z-1" href="Item.html">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-danger o-hidden h-100">
+                        <div class="card-header">
+                            <h1>Orders</h1>
+                        </div>
+                        <div class="card-text">
+                            <h1 class="text-center display-3"><strong>400</strong></h1>
+                        </div>
+                        <a class="card-footer text-white clearfix small z-1" href="orders.html">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+<!--&lt;!&ndash;customers content............................-->
+<main id="contentCustomer" class="bg-light">
+    <div  class="p-2 bd-highlight ">
+        <section class="row">
+            <div class="col">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="customerID" placeholder="CustomerID" type="text">
+                        <label for="customerID">Customer ID</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="customerName" placeholder="CustomerName" type="text">
+                        <label for="customerName">Customer Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="customerAddress" placeholder="CustomerAddress" type="text">
+                        <label for="customerAddress">Customer Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="customerContact" placeholder="CustomerAddress" type="text">
+                        <label for="customerContact">Customer Contact</label>
+                    </div>
+                    <br>
+
+                    <button id="saveBtn" class="btn btn-success" type="button">Save Customer</button>
+                    <button class="btn btn-success" type="button">Update Customer</button>
+                    <button id="clearBtn" class="btn btn-success" type="button">Clear</button>
+                </form>
+
+            </div>
+            <div class="col">
+                <table class="table table-hover">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCust">
+                    <!--<tr id="row1">
+                        <td id="id1"></td>
+                        <td id="name1"></td>
+                        <td id="add1"></td>
+                        <td id="contact1"></td>
+                    </tr>-->
+                    <!--<tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>-->
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </section>
+
+    </div>
+</main>
+    <!--item content...................................-->
+    <main id="contentItem">
+        <div id="main" class="p-2 bd-highlight ">
+            <table class="table table-hover">
+
+                <tbody>
+                <tr>
+                    <td><img src="asserts/image/keerisamba.jpg"></td>
+                    <td><img src="asserts/image/dhal.jpg"></td>
+                    <td><img src="asserts/image/tea.jpg"></td>
+                    <td><img src="asserts/image/pepsi.jpg"></td>
+                </tr>
+                <tr>
+                    <th>Keeri Samba(1kg)</th>
+                    <th>Dhal(1kg)</th>
+                    <th>Lipton Celonta(250g)</th>
+                    <th>Pepsi(1L)</th>
+                </tr>
+                <tr>
+                    <th>250.00/=</th>
+                    <th>80.00/=</th>
+                    <th>60.00/=</th>
+                    <th>100.00/=</th>
+                </tr>
+
+                <tr>
+                    <td><img src="asserts/image/cinnemon.jpg"></td>
+                    <td><img src="asserts/image/butter.jpg"></td>
+                    <td><img src="asserts/image/chilli.jpg"></td>
+                    <td><img src="asserts/image/milo.jpg"></td>
+                </tr>
+                <tr>
+                    <th>Cinnemon(100g)</th>
+                    <th>Anchor Butter</th>
+                    <th>Red Chilli(1kg)</th>
+                    <th>Milo</th>
+                </tr>
+                <tr>
+                    <th>50.00/=</th>
+                    <th>300.00/=</th>
+                    <th>260.00/=</th>
+                    <th>120.00/=</th>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+    <!--Order content...................................-->
+    <main id="contentOrder">
+        <div id="main" class="p-2 bd-highlight ">
+
+            <br>
+            <table class="table table-hover">
+                <tbody>
+                <tr>
+                    <td><input class="form-control" id="orderId" placeholder="Order ID" type="text"></td>
+                    <td><input class="form-control" id="custId" placeholder="Customer ID" type="text"></td>
+                    <td><input class="form-control" id="orderDate" placeholder="Order Date" type="text"></td>
+
+                </tr>
+                <tr>
+                    <td><input class="form-control" id="itemCode" placeholder="Item Code" type="text"></td>
+                    <td><input class="form-control" id="itemName" placeholder="Item Name" type="text"></td>
+                    <td><input class="form-control" id="itemPrice" placeholder="Item Price" type="text"></td>
+
+                </tr>
+
+                </tbody>
+            </table>
+
+            <br>
+            <button class="btn btn-success" type="button">Place Order</button>
+            <button class="btn btn-success" type="button">Clear</button>
+
+            <br><br>
+
+            <table class="table table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Order Date </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>O001</td>
+                    <td>C001</td>
+                    <td>2020/02/15</td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <button class="btn btn-success" type="button">Remove</button>
+            <br><br>
+
+            <table class="table table-hover">
+                <tbody>
+                <tr>
+                    <td><input class="form-control" id="price" placeholder="Price" type="text"></td>
+                    <td><input class="form-control" id="discount" placeholder="Discount" type="text"></td>
+                    <td><input class="form-control" id="total" placeholder="Total price" type="text"></td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <button class="btn btn-success" type="button">Total</button>
+
+
+
+        </div>
+    </main>
+    <!--item Manage content...................................-->
+    <main id="contentItemManage">
+        <div id="main" class="p-2 bd-highlight ">
+            <section class="row">
+                <div class="col">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="itemCodeInput" placeholder="ItemCode" type="text">
+                            <label for="itemCode">Item Code</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="itemNameInput" placeholder="ItemName" type="text">
+                            <label for="itemName">Item Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="itemPriceInput" placeholder="ItemPrice" type="text">
+                            <label for="itemPrice">Item Price</label>
+                        </div>
+                        <!--<div class="form-floating mb-3">
+                            <input class="form-control" id="customerContact" placeholder="CustomerAddress" type="text">
+                            <label for="customerContact">Customer Contact</label>
+                        </div>-->
+                        <br>
+
+                        <button class="btn btn-success" type="button">Save Item</button>
+                        <button class="btn btn-success" type="button">Update Item</button>
+                        <button class="btn btn-success" type="button">Clear</button>
+                    </form>
+
+                </div>
+                <div class="col">
+                    <table class="table table-hover">
+                        <thead class="bg-danger text-white">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                            <!--<th>Customer Contact</th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>I001</td>
+                            <td>Keeri Samba</td>
+                            <td>250.00/=</td>
+
+                        </tr>
+                        <tr>
+                            <td>I002</td>
+                            <td>Dhal</td>
+                            <td>80.00/=</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+            </section>
+
+        </div>
+    </main>
+
+
+
+
+<script src="asserts/js/jquery-3.5.1.min.js"></script>
+<script src="jsController/dashboard.js"></script>
+</body>
+</html>

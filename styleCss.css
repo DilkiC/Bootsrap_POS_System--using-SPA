@@ -1,0 +1,52 @@
+#nav1{
+    height: 30vh;
+    background-image: url("asserts/image/navBack.jpg");
+}
+#nav2{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    height: 20vh;
+    border: 15px solid black;
+    border-radius: 10px;
+}
+#input{
+    background-color: #b0bdbd;
+    position: absolute;
+    right: 0;
+    border: none;
+    padding-top: 8vh;
+    padding-right: 55.9vw;
+    text-align: center;
+    -webkit-text-fill-color: #0e0e0e;
+}
+#rule{
+   margin-top: 20vh;
+    height: 10px;
+}
+#pos{
+    font-family: sans-serif; /*Poppins,*/
+    /*font-weight: 400;*/
+}
+
+/*#contentSec{
+    top: 50vh;
+    height: 100vh;
+}*/
+.linksub{
+    padding-right: 10px;
+    color: white;
+}
+.linkmain{
+    padding-right: 20px;
+    color: black;
+    font-weight: bold;
+}
+#contentLink{
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+}
