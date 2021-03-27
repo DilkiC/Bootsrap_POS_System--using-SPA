@@ -1,9 +1,12 @@
 #nav1{
+
     height: 30vh;
     background-image: url("asserts/image/navBack.jpg");
+
 }
 #nav2{
     background-color: white;
+    box-shadow: 1px 2px 7px 4px rgba(58, 97, 236, 0.84);
     position: absolute;
     left: 0;
     right: 0;
@@ -15,27 +18,30 @@
 }
 #input{
     background-color: #b0bdbd;
+    box-shadow: 1px 2px 7px 4px rgba(12, 12, 12, 0.84);
     position: absolute;
-    right: 0;
+    width: 50vw;
+    left: 25vw;
+    top: 30vh;
     border: none;
     padding-top: 8vh;
-    padding-right: 55.9vw;
+    font-weight: bolder;
     text-align: center;
     -webkit-text-fill-color: #0e0e0e;
 }
 #rule{
    margin-top: 20vh;
     height: 10px;
+    box-shadow: 1px 2px 7px 4px rgba(34, 34, 243, 0.84);
+
 }
 #pos{
+    box-shadow: 1px 2px 7px 4px rgba(12, 12, 12, 0.84);
     font-family: sans-serif; /*Poppins,*/
     /*font-weight: 400;*/
 }
 
-/*#contentSec{
-    top: 50vh;
-    height: 100vh;
-}*/
+
 .linksub{
     padding-right: 10px;
     color: white;
@@ -44,9 +50,12 @@
     padding-right: 20px;
     color: black;
     font-weight: bold;
+
 }
 #contentLink{
     position: absolute;
     top: 5vh;
     right: 5vw;
 }
+
+

@@ -13,25 +13,26 @@ $('#homeLink').click(function () {
 });
 
 $('#customerLink').click(function () {
+    $('#customerID').focus();
     hideAll();
     $("#contentCustomer").css('display','block');
-    $("#input").val("C U S T O M E R");
+    $("#input").val("C U S T O M E R S");
 });
 
 $('#itemLink').click(function () {
     hideAll();
     $("#contentItem").css('display','block');
-    $("#input").val("I T E M");
+    $("#input").val("I T E M S");
 });
 
 $('#orderLink').click(function () {
     hideAll();
     $("#contentOrder").css('display','block');
-    $("#input").val("O R D E R");
+    $("#input").val("P L A C E   O R D E R");
 });
 
 $('#itemManageLink').click(function () {
     hideAll();
     $("#contentItemManage").css('display','block');
-    $("#input").val("ITEM MANAGE");
+    $("#input").val("I T E M   M A N A G E");
 });
